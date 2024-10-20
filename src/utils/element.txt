@@ -1,0 +1,14 @@
+//optener libros
+https://api.mercadolibre.com/sites/MLA/search?category=MLA412445&sort=sold_quantity
+
+
+//Obtener subgeneros
+https://api.mercadolibre.com/sites/MEC/search?q=Biografías+inspiradoras&category=MEC1196&limit=50
+
+
+//Wikipedia
+https://es.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&titles=Los_juegos_del_hambre&exintro&explaintext&origin=*
+
+
+
+https://api.mercadolibre.com/items/MEC549315600

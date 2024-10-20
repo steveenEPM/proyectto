@@ -1,0 +1,204 @@
+@import url('./index.css');
+
+
+
+/*
+    contenedor 1
+*/
+
+.homes.containers,
+.homes.container2>div {
+    padding: 3% 10%;
+
+}
+
+.homes.containers.imgBack {
+    padding: 0px;
+    width: 100vw;
+}
+
+.homes.container1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 80px;
+}
+
+.homes.container1>div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.homes.container1 img {
+    width: 350px;
+    height: 550px;
+    border-radius: 7px;
+}
+
+.homes.container1 h1 {
+    font-size: 60px;
+    max-width: 300px;
+    line-height: 58px;
+}
+
+
+
+
+/*
+    container 2
+*/
+
+.homes.container2>div {
+    flex: 1;
+}
+
+.homes.container2 img {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 360px;
+    opacity: 0.2;
+}
+
+.homes.container2 .contents {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    z-index: 4;
+}
+
+
+.homes.container2 h2,
+.homes.container3 h2,
+.homes.container4 h2 {
+    font-size: 40px;
+    color: var(--clr-primary-600);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+
+.homes.container2 .items,
+.homes.container4 .items {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: 70%;
+}
+
+
+
+.homes.container2 .items>span,
+.homes.container4 .items>span {
+    font-size: 30px;
+}
+
+.homes.container2 .items h3,
+.homes.container3 .contents h3,
+.homes.container4 .contents h3 {
+    font-size: 26px;
+    font-size: 500;
+}
+
+
+
+
+
+.homes.container3>div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+
+}
+
+.homes.container3 .contents ol {
+    margin-top: 8px;
+    transform: translateX(30px);
+
+}
+
+
+/*Contenedor4 Como comprar*/
+
+.homes.container4{
+    border-top: 1px solid rgb(111, 206, 185);
+    border-bottom: 1px solid rgb(111, 206, 185);;
+    width: 80vw;
+}
+.homes.container4>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-inline: 60px;
+}
+
+.homes.container4 .contents .items {
+    width: 51%;
+}
+
+.homes.container4 .contents .items * {
+    z-index: 3;
+}
+
+.homes.container4 .contents .items div {
+    padding: 20px;
+    max-width: 60%;
+}
+
+
+.homes.container4 .contents .items>span {
+    border:3px solid;
+    padding: 6px 18px;
+    border-radius: 180px;
+    background-color: var(--clr-primary-800);
+    border-color: var(--clr-primary-800);
+    color: var(--clr-background);
+}
+
+/*Elementos Impar*/
+.homes.container4 .contents .items:nth-child(odd) {
+    flex-direction: row-reverse;
+    align-items: center;
+    align-self: flex-start;
+}
+
+
+.homes.container4 .contents .items:nth-child(odd)::before {
+    position: absolute;
+    background: var(--clr-primary-800);
+    content: '';
+    width: 50px;
+    height: 4px;
+    z-index: 1;
+    border-radius: 100px;
+    margin-right: 32px;
+ }
+
+.homes.container4 .contents .items:nth-child(odd) div {
+    flex-direction: row-reverse;
+
+}
+
+.homes.container4 .contents .items:nth-child(odd) div h3,
+.homes.container4 .contents .items:nth-child(odd) div span {
+    text-align: end;
+}
+
+/*Elementos para*/
+.homes.container4 .contents .items:nth-child(even) {
+    align-self: flex-end;
+    align-items: center;
+}
+
+
+.homes.container4 .contents .items:nth-child(even)::before {
+    position: absolute;
+    background: var(--clr-primary-800);
+    content: '';
+    width: 50px;
+    height: 4px;
+    z-index: 1;
+    border-radius: 100px;
+    transform: translateX(22px)
+ }

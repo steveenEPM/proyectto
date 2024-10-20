@@ -1,0 +1,136 @@
+@import url('./roots.css');
+
+
+.BookPages.temaplates {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.BookPages button {
+    padding-inline: 18px;
+}
+
+.BookPages button:first-child {
+    background-color: red;
+}
+
+.temaplates .content1 {
+    flex: 2;
+    padding: 2%;
+}
+
+
+.BookPages.containers {
+    width: auto;
+}
+
+
+.BookPages.container1>h2 {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: capitalize;
+
+}
+
+
+.BookPages.container1>span {
+    font-weight: 500;
+    font-style: italic;
+}
+
+
+
+.BookPages.container1 .price {
+    font-size: 70px;
+    font-weight: 600;
+}
+
+
+.BookPages.container1 button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-transform: capitalize;
+    font-size: 18px;
+    gap: 15px;
+}
+
+
+.BookPages.container2 {
+    flex: 1;
+}
+
+
+.BookPages.container2 img {}
+
+
+.BookPages.container2>div {
+    align-self: center;
+}
+
+
+.BookPages.container3 .atributes {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+
+.BookPages.container3 .atributes div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+.BookPages.container3 .atributes h3 {
+    font-weight: 600;
+}
+
+
+.BookPages.container3 .atributes span,
+.BookPages.container3.atributes h3 {
+    font-size: 14px;
+}
+
+
+.BookPages.container4 {
+    display: grid;
+    grid-template-columns: repeat(7, 170px);
+    align-items: center;
+    justify-content: center;
+    padding: 2% 5% 0% 0%;
+    gap: 30px;
+}
+
+
+.BookPages.likes {
+    margin-top: 20px;
+}
+
+.BookPages.likes h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--clr-primary-900);
+}
+
+.BookPages.containers.root {
+    display: flex;
+    flex-direction: row;
+}
+
+.BookPages.containers.root a::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: var(--clr-primary-400);
+    margin-top: 10px;
+    margin-left: 6px;
+    border-radius: 180px;
+}
+
+.BookPages.containers.root a:hover {
+    color: var(--clr-secondary-600);
+}

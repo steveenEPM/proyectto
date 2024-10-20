@@ -1,0 +1,171 @@
+/*Pages Homes*/
+@media screen and (max-width: 412px),
+screen and (max-width: 512px) {
+    /* Estilos específicos para pantallas con ancho menor a 412px,512px */
+
+    .homes h1 {
+        font-size: 32px;
+        line-height: 30px;
+        max-width: 180px;
+    }
+
+    /*Homes */
+    .homes.containers.container1 {
+        flex-direction: column;
+        padding: 10% 4%;
+        gap: 20px
+    }
+
+    .homes.containers.container1 img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .homes.containers.container1 button {
+        padding: 8px 12px;
+        font-size: 16px;
+    }
+
+
+    .homes.containers.container2 .contents {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+    }
+
+    .homes.container2 img {
+
+        height: 500px;
+    }
+
+    .homes.containers.container2 .items {
+        max-width: 95%;
+    }
+
+    .homes.containers.container3 {
+        margin-top: 60px;
+    }
+
+    .homes.containers.container3>div {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    * {
+        font-size: 12px;
+        font-weight: lighter;
+        font-weight: 500;
+    }
+
+    .homes.container4>div {
+        margin-inline: initial;
+    }
+
+    .homes.container4 .contents .items {
+        width: 81%;
+    }
+
+
+    /* Otros estilos personalizados */
+}
+
+/*Pages Catalogo Producto*/
+@media screen and (max-width: 412px),
+screen and (max-width: 512px) {
+    .templates {
+        flex-direction: column-reverse;
+    }
+
+    .CatalogPage.container3 .filter.items {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .CatalogPage.container1 .contents {
+        overflow-x: scroll;
+        width: 96vw;
+        scroll-snap-type: x mandatory;
+        /* Define el comportamiento de "snap" en el eje X */
+
+    }
+
+
+    .CatalogPage.container1 .contents>div {
+        scroll-snap-align: start;
+        /* Cada elemento dentro del contenedor se alineará al inicio del contenedor cuando se detenga el scroll */
+    }
+
+    .CatalogPage.container2 .contents, .BookPages.container4 {
+        display: grid;
+        grid-template-columns: repeat(2, 180px);
+    }
+    
+
+
+
+    .CatalogPage.container3 {
+        width: 95vw;
+
+    }
+    
+    .CatalogPage.container3 .components{
+        flex-direction: row;
+        justify-content: space-between;
+        flex: 1;
+        padding-inline: 12px;
+    }
+
+    .CatalogPage.container3 .lines {
+        display: none;
+    }
+
+
+    /*
+        Pages Books
+    */
+
+    .BookPages.temaplates {
+        flex-direction: column-reverse;
+    }
+
+    .BookPages.container2 img {
+        width: 100%;
+        height: 350px;
+        align-self: center;
+    }
+
+
+
+    .BookPages.container1 span.price {
+        font-size: 40px;
+    }
+
+    .BookPages.container1  div:nth-last-child(1){
+        margin-top: 18px;
+    }
+
+    .BookPages.container1 button {
+        width: 120px;
+    }
+
+    .BookPages.container1 button  svg {
+        display: none;
+    }
+
+    .BookPages.containers.root a::after {
+       
+        margin-top: 5px;
+     
+    }
+}
+
+/* pages auth*/
+@media screen and (max-width: 412px),
+screen and (max-width: 512px ){
+
+    .PageAuth.container2{
+        display: none;
+    }
+}

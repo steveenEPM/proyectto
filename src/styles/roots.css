@@ -1,0 +1,33 @@
+:root {
+    --clr-primary-50: rgb(220, 243, 239);
+    --clr-primary-100: rgb(170, 225, 212);
+    --clr-primary-200: rgb(111, 206, 185);
+    --clr-primary-300: #1cba9d;
+    --clr-primary: var(--clr-primary-300);
+    --clr-primary-400: rgb(0, 170, 137);
+    --clr-primary-500: rgb(0, 154, 118);
+    --clr-primary-600: rgb(0, 141, 105);
+    --clr-primary-700: rgb(0, 125, 90);
+    --clr-primary-800: rgb(0, 109, 76);
+    --clr-primary-900: rgb(0, 80, 49);
+    --clr-secondary-50: rgb(255, 233, 236);
+    --clr-secondary-100: rgb(255, 201, 204);
+    --clr-secondary-200: rgb(247, 146, 143);
+    --clr-secondary-300: rgb(238, 102, 99);
+    --clr-secondary-400: rgb(248, 61, 57);
+    --clr-secondary-500: rgb(251, 34, 20);
+    --clr-secondary-600: rgb(237, 13, 24);
+    --clr-secondary: var(--clr-secondary-600);
+    --clr-secondary-700: rgb(219, 0, 18);
+    --clr-secondary-800: rgb(207, 0, 8);
+    --clr-secondary-900: rgb(193, 0, 0);
+
+    --clr-text: rgb(11, 9, 15);
+    --clr-background: rgba(244, 252, 252,1);
+
+    --border-radius: 12px;
+
+    /*Valores de libros*/
+    --book-width:200px;
+    --book-height:210px;
+}
